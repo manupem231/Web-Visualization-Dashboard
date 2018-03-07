@@ -30,19 +30,22 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                    <a class="dropdown-item" href="temperature.html">Temperature</a>
+                    <a class="dropdown-item" href="humidity.html">Humidity</a>
+                    <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                    <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+                  </div>
+                </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comparison.html">Comparison</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Plots</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Comparison</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Data</a>
+              <a class="nav-link" href="Weather_data.html">Data</a>
             </li>
           </ul>
         </div>
@@ -57,69 +60,44 @@
         </h3>
   
         <div class="row">
-          <div class="col-lg-6 portfolio-item">
+          <div class="col-lg-5 portfolio-item">
             <div class="card h-100">
               <h3>
                 <small> Vs Temperature: </small>
               </h3> 
-              <a href="#"><img class="card-img-top" src="City_Latitude_vs_Temperature.png" alt=""></a>
+              <a href="#"><img class="card-img-top" src="City_Latitude_vs_Temperature.png" style="width:400px;height:400px" alt=""></a>
               
             </div>
           </div>
-          <div class="col-lg-6 portfolio-item">
+          <div class="col-lg-5 portfolio-item">
             <div class="card h-100">
                 <h3>
                   <small> Vs Wind Speed: </small>
                 </h3>
-              <a href="#"><img class="card-img-top" src="City_Latitude_vs_Wind_Speed.png" alt=""></a>
+              <a href="#"><img class="card-img-top" src="City_Latitude_vs_Wind_Speed.png" style="width:400px;height:400px" alt=""></a>
               
             </div>
           </div>
           
-          <div class="col-lg-6 portfolio-item">
+          <div class="col-lg-5 portfolio-item">
             <div class="card h-100">
                 <h3>
                 <small> Vs Humidity: </small>
                 </h3>
-              <a href="#"><img class="card-img-top" src="City_Latitude_vs_Humidity.png" alt=""></a>
+              <a href="#"><img class="card-img-top" src="City_Latitude_vs_Humidity.png" style="width:400px;height:400px" alt=""></a>
               
             </div>
           </div>
-          <div class="col-lg-6 portfolio-item">
+          <div class="col-lg-5 portfolio-item">
             <div class="card h-100">
                 <h3> 
                   <small> Vs Cloudiness: </small>
                 </h3>
-              <a href="#"><img class="card-img-top" src="City_Latitude_vs_Cloudiness.png" alt=""></a>
+              <a href="#"><img class="card-img-top" src="City_Latitude_vs_Cloudiness.png" style="width:400px;height:400px" alt=""></a>
               
             </div>
           </div>
         </div>
-
-      <!-- Pagination -->
-      <ul class="pagination justify-content-center">
-        <li class="page-item">
-          <a class="page-link" href="#" aria-label="Previous">
-            <span aria-hidden="true">&laquo;</span>
-            <span class="sr-only">Previous</span>
-          </a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#">1</a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#">2</a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#">3</a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#" aria-label="Next">
-            <span aria-hidden="true">&raquo;</span>
-            <span class="sr-only">Next</span>
-          </a>
-        </li>
-      </ul>
 
     </div>
 

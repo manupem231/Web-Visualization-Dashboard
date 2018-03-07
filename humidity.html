@@ -30,19 +30,22 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+                    <a class="dropdown-item" href="temperature.html">Temperature</a>
+                    <a class="dropdown-item" href="humidity.html">Humidity</a>
+                    <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                    <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+                  </div>
+                </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comparison.html">Comparison</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Plots</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Comparison</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Data</a>
+              <a class="nav-link" href="Weather_data.html">Data</a>
             </li>
           </ul>
         </div>
@@ -62,14 +65,10 @@
           <div class="card h-100">
             <a href="#"><img class="card-img-top" src="City_Latitude_vs_Humidity.png" alt=""></a>
             <div class="card-body">
-              <p class="card-text">The purpose of this project was to analyze how weather changes as you get closer to the euqator.
-                  To Accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset
-                  on over 500 cities. </p>
-                  
-              <p class ="card-text">After assembling the dataset, we used Matplotlib to plot various aspects of Weather 
-                  Vs Latititude. The factors we looked at included: Temperature, Cloudiness, Wind speed and Humidity.
-                  This site provides the source data and visualizations created as part of the analysis, as well as 
-                  explanations and descriptions of any trends and correlations witnessed.</p>
+              <p class="card-text"> With our current analysis, it is difficult to find any obvious correlation between latittude and humidity.
+                                    There is a clear band of many data points at 100% humidity, and there do seem to be strong clusters of
+                                    high humidity around the equator and in some other areas (e.g. a strong band of 0% humidity at latitude > 60).
+                                    Further analysis is required. </p>
             </div>
           </div>
         </div>
@@ -79,7 +78,7 @@
 
                     <!-- Page Heading -->
                     <h2>
-                      <small class="my-4"> Visualization: </small>
+                      <small class="my-4"> Visualizations: </small>
                     </h2>
               
                     <div class="row">
@@ -113,33 +112,8 @@
         </div>
         </div>
         </div>
+        </div>
 
-      <!-- Pagination -->
-      <ul class="pagination justify-content-center">
-        <li class="page-item">
-          <a class="page-link" href="#" aria-label="Previous">
-            <span aria-hidden="true">&laquo;</span>
-            <span class="sr-only">Previous</span>
-          </a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#">1</a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#">2</a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#">3</a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#" aria-label="Next">
-            <span aria-hidden="true">&raquo;</span>
-            <span class="sr-only">Next</span>
-          </a>
-        </li>
-      </ul>
-
-    </div>
     <!-- /.container -->
 
     <!-- Footer -->
